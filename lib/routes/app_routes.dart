@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../screens/loading.dart'; // Import du SplashScreen
 import '../screens/home.dart'; // Import du WelcomeScreen
 
@@ -13,7 +14,6 @@ class AppRoutes {
     bienvenu: (context) => HomeScreen(),
   };
 
-  static String settings = '/home';
-
+  static String settings = '/';
   static String home = '/home';
 }
