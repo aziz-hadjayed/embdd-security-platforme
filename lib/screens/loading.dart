@@ -1,7 +1,5 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:plat_forme/routes/app_routes.dart'; // Adaptez le chemin d'import
 import 'dart:math';
 
 class LoadingScreen extends StatefulWidget {
@@ -39,7 +37,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     // Démarre le timer pour la redirection _____________________________________ 3 sec
     Future.delayed(const Duration(seconds: 3), () {
       _loadingTimer.cancel();
-      Navigator.of(context).pushReplacementNamed(AppRoutes.home);
+      Navigator.of(context).pushReplacementNamed("/home");
     });
   }
 
@@ -52,7 +50,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xFF1A1A1A),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
