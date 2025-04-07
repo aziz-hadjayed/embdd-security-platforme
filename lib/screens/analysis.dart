@@ -14,7 +14,7 @@ class AnalysisScreen extends StatefulWidget {
 
 class _AttackSelectionScreenState extends State<AnalysisScreen> {
   List<Attack> attacks = [
-    Attack('Injection SQL', 'Exploitation des failles de base de données'),
+    Attack('Buffer Overflow', 'Un programme écrit accidentellement plus de données qu'' un espace mémoire (buffer) ne peut en contenir, permettant à un attaquant d''écraser des zones critiques de la mémoire et d''exécuter du code malveillant'),
     Attack('XSS', 'Cross-Site Scripting'),
     Attack('DoS', 'Déni de service'),
     Attack('Phishing', 'Attaque par ingénierie sociale'),
@@ -88,7 +88,7 @@ class _AttackSelectionScreenState extends State<AnalysisScreen> {
                 style: GoogleFonts.roboto(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white
+                  color: const Color.fromARGB(255, 49, 44, 44)
                 ),
               ),
 
@@ -100,8 +100,6 @@ class _AttackSelectionScreenState extends State<AnalysisScreen> {
     );
   }
 }
-
-
 
 
 class Attack {
